@@ -1,0 +1,105 @@
+/* importing Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #f5f5f5;
+    font-family:'Merriweather';
+}
+.budget-feedback, .expense-feedback{
+    display: none;
+}
+#budget-form{
+    border: 2px solid #317b22;
+    padding: 3%;
+    border-radius: 8px;
+}
+#expense-form{
+    border: 2px solid red;
+    padding: 3%;
+    border-radius: 8px;
+}
+#budget-submit{
+    border:2px solid  #317b22;
+    border-radius: 8px;
+}
+#expense-submit{
+    border: 2px solid red;
+    border-radius: 8px;
+}
+.budget-icon, .expense-icon, .balance-icon{
+    color: dodgerblue;
+}
+#budget{
+    color: green;
+}
+#expense{
+    color: red;
+}
+#balance{
+    color: black;
+}
+.showItem{
+    display: block;
+}
+.showRed{
+    color: red !important;
+}
+.showGreen{
+   color: green !important;
+}
+.showBlack{
+    color: black !important;
+}
+.edit-icon, .delete-icon{
+    color:red;
+}
+.animation-effect{
+    animation: animation-effect 1s linear infinite; 
+}
+@keyframes animation-effect{
+    0%{transform: translateX(10) rotateX(10deg);}
+    10%{transform: translateY(0) rotateY(-10deg);}
+}
+@media screen and (max-width:375px){
+  #budget, #expense, #balance{
+      font-size: 1.2rem;
+  }
+  .info-title-balance{
+      margin-left: 1em;
+  }
+  .budget-icon{
+      margin-left: 1rem;
+  }
+  #budget, #expense, #balance{
+    margin-left: 1rem;
+  }
+  .expense-icon{
+      margin-left: 1rem;
+  }
+  .balance-icon{
+      margin-left: 1rem;
+  }
+}
+@media screen and (max-width:320px){
+    .info-title-balance{
+        margin-left: 2.4rem;;
+        font-size: 20px;
+    }
+    .info-title-budget{
+        margin-right:4rem;
+        font-size: 20px;
+    }
+    .info-title-expense{
+        margin-left: 0.6rem;
+        margin-right: 1rem;
+        font-size: 20px;
+    }
+    #budget, #expense, #balance{
+        margin-left: 1rem;
+      }
+    .animation-effect{
+        text-align: center;
+    }  
+}
